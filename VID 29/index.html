@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 03 CSS Card</title>
+    <style>
+        * {
+            font-family: monospace;
+            background-color: aqua;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .card {}
+
+        .card img {
+            border-radius: 10px;
+            outline: 4px solid white;
+            display: block;
+            margin: auto;
+        }
+
+        .capsule {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 20vw;
+            text-align: center;
+            display: block;
+            margin: auto
+        }
+
+        .para {
+            text-align: center;
+        }
+
+        .button {
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+        }
+
+        .main {
+            box-shadow: inset;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">THE BATMAN</h1>
+    <div class="main">
+
+        <div class="card">
+            <img src="card.png" height="500px" alt="batman Profile">
+
+        </div>
+
+        <span class="capsule">
+            Alfred Pennyworth
+        </span>
+        <span class="capsule">
+            Selena Kyle
+        </span>
+        <h2 class="title">Bruce Wayne</h2>
+        <div>
+            <p class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam officia consequuntur quisquam quae
+                recusandae
+                eligendi facilis id asperiores nostrum nemo. Nesciunt, deleniti eligendi?
+            </p>
+        </div>
+        <button class="button">
+            READ MORE
+        </button>
+    </div>
+</body>
+
+</html>
