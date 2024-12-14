@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS MULTICOLOR WEBSITE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+        }
+
+        :root {
+            --primary-color: rgb(204, 240, 240);
+            --sec-color: rgb(122, 213, 121);
+            --text-color: rgb(0, 0, 0);
+        }
+
+
+        body {
+            background-color: var(--primary-color);
+        }
+
+        nav {
+            background-color: var(--sec-color);
+            padding: 12px 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 20px;
+            font-weight: bolder;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
+
 </html>
