@@ -11,19 +11,23 @@
         background-color: red;
     } */
 
-    .box::first-line {
+    /* .box::first-line {
         color: brown;
-    }
+    } */
+
+     .boxes * {
+        color: blue;
+        border: 2px solid black;
+     }
+     [data-color="primary"] 
+        {
+            margin-top: 45px;
+        }
 </style>
 
 <body>
     <div class="boxes">
-        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti officiis error suscipit
-            molestias cumque a architecto ipsum exercitationem doloribus quos consequatur ea iure aspernatur eos
-            pariatur nostrum quis, ad cupiditate voluptatum ipsa provident perferendis dolorum sed! Numquam fuga,
-            pariatur iste doloremque dolorum maxime quis aliquid accusamus sequi nemo eum cupiditate, amet quaerat nihil
-            quae laudantium architecto et similique totam error blanditiis adipisci aliquam. Iste, quae. Debitis fugiat
-            distinctio ipsum?</div>
+        <div data-color="primary" class="box">I am First Box</div>
         <div class="box">I am second box</div>
         <div class="box">I am third box</div>
     </div>
