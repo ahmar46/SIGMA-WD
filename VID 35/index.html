@@ -15,14 +15,43 @@
         color: brown;
     } */
 
-     .boxes * {
+    /* .boxes * {
         color: blue;
         border: 2px solid black;
-     }
-     [data-color="primary"] 
-        {
-            margin-top: 45px;
-        }
+    }
+
+    [data-color="primary"] {
+        margin-top: 45px;
+    }
+
+    .box:nth-child(odd) {
+        background-color: aqua;
+    } */
+
+    .box:nth-last-child(2) {
+        color: red;
+    }
+
+    .boxes::before {
+        content: "Ahmar ROXXX";
+    }
+
+    .boxes::after {
+        content: "The Best Web Dev";
+        color: aqua;
+    }
+
+    ::selection {
+        background-color: black;
+        color: aqua;
+    }
+    .box::first-letter {
+        color: blueviolet;
+        font-size: 45px;
+    }
+    input::placeholder {
+        color: rgb(151, 9, 183);
+    }
 </style>
 
 <body>
@@ -31,6 +60,7 @@
         <div class="box">I am second box</div>
         <div class="box">I am third box</div>
     </div>
+    <input type="text" placeholder="TYPE YOUR NAME">
 </body>
 
 </html>
