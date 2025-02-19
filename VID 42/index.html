@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS TRANSFORMS</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         .box {
             height: 50px;
             width: 50px;
@@ -24,6 +29,9 @@
             /* transform: skewX(34deg); */
             /* transform: skewY(34deg); */
             /* Skew not avail on Z axis */
+            /* transform: translateY(100%) skew(40deg) translateX(45%); */
+            transform: rotate(55deg);
+            transform-origin: 0% 0%;
             display: flex;
             justify-content: center;
             align-items: center;
