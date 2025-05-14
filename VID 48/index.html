@@ -14,6 +14,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
+            animation: animateX 3s linear infinite, animateY 1s ease-out infinite alternate;
         }
 
         .container {
@@ -24,15 +25,23 @@
         }
 
         @keyframes animateX {
-            from {}
+            from {
+                left: 0;
+            }
 
-            to {}
+            to {
+                left: 100%;
+            }
         }
 
         @keyframes animateY {
-            from {}
+            from {
+                bottom: 0;
+            }
 
-            to {}
+            to {
+                bottom: 100%;
+            }
         }
     </style>
 </head>
