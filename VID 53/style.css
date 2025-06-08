@@ -3,14 +3,17 @@
     padding: 0;
 }
 
-main {
+.main {
     background-image: url("assests/img/bg.jpg");
+    position: relative;
     height: 80vh;
 }
 
-main .box{
+.main .box{
     height: 80vh;
     width: 100%;
     opacity: 0.44;
+    position: absolute;
+    top: 0;
     background-color: black;
 }
