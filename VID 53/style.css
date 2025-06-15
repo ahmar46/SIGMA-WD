@@ -11,6 +11,7 @@
   background-size: max(1200px, 100vw);
   position: relative;
   height: 80vh;
+  height: 100vh;
 }
 
 .main .box {
@@ -19,7 +20,7 @@
   position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
-  z-index: 1; /* Add this */
+  z-index: 1;
 }
 
 nav {
@@ -45,9 +46,7 @@ nav button {
 }
 
 .hero {
-  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
-    sans-serif;
-  font-weight: 700;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,sans-serif;
   color: rgb(255, 255, 255);
   height: 100%;
   display: flex;
@@ -59,6 +58,17 @@ nav button {
   z-index: 10;
 }
 
-.hero:first-child {
+.hero :nth-child(1) {
   font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.hero :nth-child(2) {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero :nth-child(3) {
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
