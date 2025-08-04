@@ -21,4 +21,4 @@ console.log("You entered: " + a);
 
 document.title = "Ka Chaow!";
 
-document.body.style.backgroundColor = "lightblue";
+document.body.style.backgroundColor = "lightblue"; 
