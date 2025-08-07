@@ -1,4 +1,4 @@
-console.log("Faulty Calculator Loaded VID 61");
+console.log("Faulty Calculator VID 61");
 
 /*
 
@@ -16,6 +16,25 @@ This faulty calculator will have the following features:
 
 */
 
-let = Math.random();
+let random = Math.random();
+let a = prompt("Enter first number:");
+let b = prompt("Enter second number:");
+let c = prompt("Enter operation");
 
-if 
+let obj = {
+    "+": "-",
+    "*": "+",  
+    "-": "/",
+    "/": "**",
+}
+
+if (random > 0.1) {
+    // Perform the correct operation
+    alert(`Result: ${eval(`${a} ${c} ${b}`)}`);
+}
+
+else {
+    // Perform the faulty operation
+    c = obj[c];
+    alert(`Faulty Result : ${eval(`${a} ${c} ${b}`)}`);
+}
