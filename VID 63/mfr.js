@@ -7,9 +7,15 @@ let arr = [1, 13, 7, 7, 11];
 }*/
 // console.log(newArr); // Output: [1, 169, 49, 49, 121]
 
-let newArr = arr.map((e, inddex, array) => {
+let newArr = arr.map((e, index, array) => {
     return e ** 2;
 })
 
 console.log(newArr); // Output: [1, 169, 49, 49, 121]
-
+const greaterthanseven = (e) => {
+    if(e>7) {
+        return true;
+    }
+    return false;
+}
+console.log(arr.filter(greaterthanseven)); // Output: [13, 11]
