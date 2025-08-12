@@ -19,3 +19,10 @@ const greaterthanseven = (e) => {
     return false;
 }
 console.log(arr.filter(greaterthanseven)); // Output: [13, 11]
+
+let arr2 = [1,2,3,4,5,6];
+
+const red = (a, b) => {
+    return a + b;
+}
+console.log(arr2.reduce(red)); // Output: 21 
