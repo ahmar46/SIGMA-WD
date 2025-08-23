@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM MANIPULATION VID 71</title>
+    <title>DOM MANIPULATION</title>
 </head>
 <body>
     <div class="container">
+        <div class="box" style="display: flex;" data-created="ahmar" data-concept="jimi">Hey i am a box</div>
         <div class="box">Hey i am a box</div>
+        <script>
+            // let div = document.createElement("div");
+            // div.innerHTML = "I am created using JS <b> I have a class of created";
+            // div.setAttribute("class", "created");
+            // document.querySelector(".container").append(div);
+            let cont = document.querySelector(".container");
+            cont.insertAdjacentHTML("afterend", <b> I am under the water. please save me</b>);
+        </script>
     </div>
 </body>
 </html>
