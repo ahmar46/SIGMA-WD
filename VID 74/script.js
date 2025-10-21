@@ -13,3 +13,7 @@ button.addEventListener("dblclick", () => {
 button.addEventListener("contextmenu", () => {
     document.querySelector(".box").innerHTML = "<b>Yayy you were clicked!</br>";
 });
+
+document.addEventListener("keydown", (e) => {
+    console.log(e,e.key,e.keyCode);
+});
